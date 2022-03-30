@@ -1,5 +1,6 @@
 package net.dariolucic.codec.radius;
 
+import io.vertx.core.buffer.Buffer;
 import net.dariolucic.codec.Codec;
 import net.dariolucic.codec.Message;
 
@@ -9,7 +10,7 @@ public class RadiusCodec implements Codec {
         return new byte[] {};
     }
 
-    public Message decode(byte[] buffer) {
+    public Message decode(Buffer buffer) {
         return new RadiusMessage();
     }
 
